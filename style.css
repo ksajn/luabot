@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 .banner {
     width: 100%;
@@ -37,12 +38,12 @@
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .navbar ul li::after{
     content: '';
-    height: 3px;
+    height: 2px;
     width: 0;
     background: #00204d;
     position: absolute;
@@ -111,12 +112,61 @@ button:hover{
     border: none;
 }
 
+#info {
+    margin-top: 200px;
+    text-decoration: none;
+}
 
+#info a{
+    text-decoration: none;
+    color: #a8a8a8;
+    text-transform: lowercase;
+}
 
+#mainweb{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #00204d;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
 
+ul p{
+    margin: auto;
+    padding: 35px 0;
+    align-items: center;
+    font-weight: bold;
+}
 
+ul p::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #00204d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    
+}
 
+ul p:hover::after{
+    width: 100%;
+}
 
+ul p{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+ul p{
+    text-decoration: none;
+    color: #fff;
+    text-transform: lowercase;
+}
 
 
 
